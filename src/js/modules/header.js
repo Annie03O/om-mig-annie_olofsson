@@ -10,12 +10,12 @@ if (header) header.innerHTML = ` <span>
                 </a>
             </li>
             <li>
-                LinkedIn
-            </li>
-            <li>
                 <a href="/resume">
                     Resume
                 </a>
             </li>
         </ul>
+        <span>
+           <i class="fa-brands fa-linkedin"></i>
+        </span>
     `

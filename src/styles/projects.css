@@ -1,0 +1,181 @@
+body, .project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-detail-header {
+    display: flex;
+    justify-content: left; 
+    padding-left: .5rem;
+    width: 100%;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.project-detail-header span {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.project-detail-header span a {
+    color: black;
+    text-decoration: underline;
+}
+#project-container {
+    width: 90%;
+    border: 1px solid black;
+}
+.head-img {
+    width: 80%;
+}
+.project-description {
+    width: 80%;
+    text-align: left;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 1px solid black;
+    gap: 1rem;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid black;
+}
+.feature-container h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+.feature-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 1px solid black;
+    gap: 1rem;
+}
+.feature h3 {
+    text-align: left;
+    width: fit-content;
+}
+.feature-container, section {
+    border: 1px solid black;
+}
+.feature-description {
+    text-align: left;
+    padding: 1rem;
+}
+.feature {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.feature-banner {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1rem;
+}
+.feature-banner > section {
+    flex: 1;
+}
+.feature:nth-child(even) .feature-banner {
+    flex-direction: row-reverse;
+}
+.feature-banner img {
+    width: 100%;
+}
+
+.feature-image-row {
+    display: flex;
+    flex-wrap:wrap; 
+    max-width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+.feature-image-row img {
+    width: 50%;
+}
+.feature-image-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgb(0 0 0 / 70%);
+    display: grid;
+    place-items: center;
+}
+.overlay .overlay-wrapper header {
+    display: flex;
+    position: relative;
+    justify-content: right;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid white;
+}
+.overlay .overlay-wrapper header button {
+    position: relative;
+    height: 3rem;
+    background: transparent;
+    width: 3rem;
+    border: 0;
+    cursor: pointer;
+}
+.overlay .overlay-wrapper header button:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    background: #9f9f9f;
+}
+.overlay .overlay-wrapper header button span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+.overlay .overlay-wrapper header button span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.overlay .overlay-wrapper header button span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.overlay .overlay-wrapper section {
+    width: 90%;
+}
+.overlay .overlay-wrapper section img {
+    border: 1px solid white;
+    width: 100%;
+}
+.overlay .overlay-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+
+}
+.closeModal {
+    display: none;
+}
