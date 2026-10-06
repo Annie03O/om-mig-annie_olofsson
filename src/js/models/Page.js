@@ -80,15 +80,15 @@ export const pages = [
                 description: "A comprehensive database of characters from various franchises, including detailed bios and images.", 
                 images: [
                     {
-                        image: "/src/images/projects/FF/Drama/ShowPage/CharacterPage/Top.png",
+                        image: "/src/images/projects/ClearChoice/CCPPBtm.png",
                         imageDetails: "Desciption for image",
                     },
                     {
-                        image: "/src/images/projects/FF/Drama/ShowPage/CharacterPage/Middle.png",
+                        image: "/src/images/projects/ClearChoice/CCProductPage.png",
                         imageDetails: "Desciption for image",
                     },
                     {
-                        image: "/src/images/projects/FF/Drama/ShowPage/CharacterPage/Btm.png",
+                        image: "/src/images/projects/ClearChoice/CCProducts.png",
                         imageDetails: "Desciption for image",
                     },
                 ],
