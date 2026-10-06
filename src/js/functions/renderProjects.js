@@ -17,8 +17,6 @@ export function renderProjects(pages) {
           </section>
           `
       container.addEventListener("click", function () {
-         console.log("klick");
-         
           window.location.href = `/projects.html?project=${encodeURIComponent(page.id)}`;
       })
       projectWrapper.appendChild(container);

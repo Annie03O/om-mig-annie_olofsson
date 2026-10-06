@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel -->
     <title>Om Mig</title>
+
+    <!-- CSS för Layout -->
     <link rel="stylesheet" href="/src/styles/style.css">
+    
+    <!-- Ikoner -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Script för hela sidan -->
     <script type="module" src="/src/js/script.js" defer></script>
+    
+    <!-- Script för header -->
     <script type="module" src="/src/js/modules/header.js" defer></script>
 </head>
 <body>
+    <!-- Headern returneras i header.js -->
     <header id="header">
       </header>
+    <!-- Main -->
     <main>
+        <!-- Banner -->
         <article class="banner">
+            <!-- Container för introduktion -->
             <section class="introduction-container">
+                <!-- Introduktionstext -->
                 <span class="introduction">
                     Hello, I'm Annie - an UX Engineer Student with a degree in frontend developing.
                 </span>
+                <!-- Container för filtrering -->
                  <section class="skills-container">
-                    <h3>Skills</h3>
+                    <h3>Filter Skills</h3>
+                    <!-- Knapparna returneras i script.js -->
                     <section class="skills"></section>
             </section>
         </article>
+         <!-- Projekten returneras i projects.js -->
          <article id="projects"></article>  
         
     </main>

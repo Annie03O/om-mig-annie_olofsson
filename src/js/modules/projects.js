@@ -2,19 +2,27 @@ import { pages } from "../models/Page.js";
 import "./enlargeImage.js"
 export const renderProjectPage = (project) => {
     if (!project) {
-        return pages.map((page) => `
-            <article class="project">
+        return pages.map((page) => {                    
+            return `
+          
+          <article class="project">
                 <h2>${page.title}</h2>
                 <p>${page.description}</p>
             </article>
-        `).join("");
+        `}).join("");
     }
+
+    document.title = project.title;    
 
     return `
         <article class="project-detail">
-            <a href="/">Back to projects</a>
-            <h1>${project.title}</h1>
-            <img src="${project.thumbnail}" class="head-img" alt="${project.title}">
+            <header class="project-detail-header">
+                <a href="/">Back</a>
+            </header>
+            <section class="head-img-container">
+                <h1>${project.title}</h1>
+                <img src="${project.thumbnail}" class="head-img" alt="${project.title}">
+            </section>
             <span class="project-description">${project.description}</span>
             <section class="project-gallery">
                 ${project.features.map((feature) => {
@@ -23,7 +31,7 @@ export const renderProjectPage = (project) => {
                     return `
                         <section class="feature">
                                 <h2>${feature.title}</h2>
-                                <section class="feature-banner">
+                                <section class="feature-info">
                                    <section> 
                                       ${image
                                           ? `<img src="${image.image}" alt="${image.imageDetails}"/>`
@@ -33,14 +41,17 @@ export const renderProjectPage = (project) => {
                                     ${image?.imageDetails ? `<span>${image.imageDetails}</span>` : ""}
                                   </section>
                             </section>
-                                 ${featureImages.map((image, index) => `
+                            <section class="feature-image-columns">
+                                ${featureImages.map((image, index) => `
                                     <section class="feature-image-row ${index % 2 === 1 ? "reverse" : ""}">
-                                        <img src="${image.image}" alt="${image.imageDetails}">
-                                        <span>${image.imageDetails}</span>
+                                        <section class="feature-image-container">
+                                            <img src="${image.image}" alt="${image.imageDetails}">
+                                        </section>
+                                        <section class="feature-description-container">
+                                            <span>${image.imageDetails}</span>
+                                        </section>
                                     </section>
-                                    
-                                `).join("")}
-                           
+                                `).join("")}          
                         </section>
                     `;
                 }).join("")}

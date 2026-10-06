@@ -104,50 +104,7 @@ export const pages = [
                 ],
             },
         ],
-        "Next Js",
-        true,
-        false,
-        true,
-        false    
-    ),
-    new Page(
-        "clearchoice-merchandise",
-        "ClearChoice Merchandise",
-        "An e-commerce website for ClearChoice, a company specializing in custom merchandise for fans.",
-        "/src/images/projects/ClearChoice/CCStart.png",
-        [
-            "/src/images/projects/ClearChoice/ClearChoice.png",
-            "/src/images/projects/ClearChoice/CCProducts.png",
-            "/src/images/projects/ClearChoice/ClearChoice.png",
-            "/src/images/projects/ClearChoice/CCProducts.png",
-            "/src/images/projects/ClearChoice/CCProductPage.png",
-            "/src/images/projects/ClearChoice/CCProductPageBtn.png",
-            "/src/images/projects/ClearChoice/CCSCPage.png",
-            "/src/images/projects/ClearChoice/CCSCModal.png",
-            "/src/images/projects/ClearChoice/CCSCResult.png"
-        ],
-        [
-            {
-                title: "Size Calculator",
-                description: "The size calculator improves the online shopping experience by providing more accurate size recommendations. Instead of relying solely on standard size charts, users can enter their personal measurements, which are then matched against model-specific sizing data. This ensures a better fit across different clothing styles and reduces the risk of incorrect sizing. Logged-in users can also save their measurements for a faster and more seamless experience. The feature is designed to minimize returns, enhance user satisfaction, and contribute to a more sustainable e-commerce flow.",
-                images: [
-                    {
-                        image: "/src/images/projects/ClearChoice/CCSCPage.png",
-                        imageDetails: "Description for image",
-                       
-                    },
-                    {
-                        image: "/src/images/projects/ClearChoice/CCSCModal.png",
-                        imageDetails: "Description for image",   
-                    },
-                    {
-                        image: "/src/images/projects/ClearChoice/CCSCResult.png",
-                        imageDetails: "Description for image",
-                    }
-                ]
-            }
-        ],
-        "Next Js",
+        "React JS",
         true,
         false,
         true,

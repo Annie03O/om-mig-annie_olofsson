@@ -14,6 +14,7 @@ document.querySelector("#projects").appendChild(projectWrapper);
 
 renderProjects(pages);
 
+
 skills.map((skill) => {
     const button = document.createElement("button");
     button.id = skill.id;
